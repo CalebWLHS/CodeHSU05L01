@@ -54,7 +54,13 @@ public class Rectangle { //make public for CS A
         this.width = width;
     }
 
-
+    /**
+     * Prints the length and the width of the rectangle to 2 decimal places
+     */
+    public String toString(){
+        DecimalFormat df = new DecimalFormat("#.##");
+        return "The height of the rectangle is " +df.format(length) + "and the width is " +df.format(width) + ".";
+    }
     //other methods
 
 
